@@ -1,0 +1,63 @@
+body{
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--color_blanco);
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Playfair Display;
+}
+
+:root{
+  --color_primario: #61764B;
+  --color_secundario: #A3B18A;
+  --color_blanco:#F9F9F9;
+  --color_claro:#E3CBA8;
+  --color_oscuro:#D4A373;
+  
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.playfair-display{
+font-family: "Playfair Display", serif;
+font-optical-sizing: auto;
+font-weight:100;
+font-style: normal;
+}
+
+.quattrocento-sans-regular {
+font-family: "Quattrocento Sans", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.quattrocento-sans-bold {
+font-family: "Quattrocento Sans", serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.quattrocento-sans-regular-italic {
+font-family: "Quattrocento Sans", serif;
+font-weight: 400;
+font-style: italic;
+}
+
+.quattrocento-sans-bold-italic {
+font-family: "Quattrocento Sans", serif;
+font-weight: 700;
+font-style: italic;
+}
+
+p{
+  font-family: Quattrocento Sans;
+  color: var(--color_primario);
+  font-size: 24px;
+  margin: 3vh 0;
+}

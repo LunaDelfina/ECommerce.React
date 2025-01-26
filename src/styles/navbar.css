@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Playfair Display;
+}
+
+
+
+body{
+    background-color: var(--color_blanco);
+
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--color_secundario);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(163, 177, 138, .45); 
+    margin-top: 2vh;
+    justify-content: space-between;
+}
+
+.NavBar .Logo{
+    display: flex;
+    gap: 2vh;
+    margin: 2vh;
+}
+
+.NavBar h1{
+    color: var(--color_primario);
+    align-self: center;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.NavBar  .contenido{
+    display: flex;
+
+}
+.NavBar .Logo img{
+    width: 4em;
+}
+
+.NavBar .contenido .Categorias{
+    display: flex;
+    flex-direction: row;
+    gap:1vh;
+    align-items: center;
+}
+
+.NavBar .contenido .Categorias button{
+    font-family: 'Quattrocento Sans';
+    background-color: transparent;
+color: var(--color_secundario);
+font-size: 24px;
+padding: 1vh;
+border-radius: 12px;
+}
+
+.NavBar .contenido .Categorias button:hover{
+    background-color: var(--color_secundario);
+    color: var(--color_blanco);
+}
+
+.NavBar .contenido .Carrito{
+    display: flex;
+    align-items: center;
+    margin: 4vh;
+}
+.NavBar .contenido .Carrito img{
+    width: 2em;
+}
+.NavBar .CarritoNumero {
+    position: relative;
+    background-color: var(--color_claro);
+    color: var(--color_blanco);
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, 50%);
+}
