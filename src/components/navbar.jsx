@@ -2,6 +2,7 @@ import { useState } from 'react';
 import '../styles/navbar.css';
 import React from 'react';
 import logo from '../assets/Logo.png';
+import {Link} from 'react-router';  
 import CartWidget from './CartWidget.jsx';
 
 function NavBar() {
@@ -14,10 +15,10 @@ function NavBar() {
                 </section>
                 <div className="contenido">
                 <section className='Categorias'>
-                    <button>Comedor</button>
-                    <button>Habitación</button>
-                    <button>Jardín</button>
-                    <button>Otros</button>
+                    <Link to="category/beauty"><button>Comedor</button></Link>
+                    <Link to="category/fragances"><button>Habitación</button></Link>
+                    <Link to="category/furniture"><button>Jardín</button></Link>
+                    <Link to="category/Otros"><button>Otros</button></Link>
                 </section>
                 <CartWidget />
                 </div>

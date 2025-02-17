@@ -1,0 +1,41 @@
+.productos {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho disponible */
+    margin: 0 auto;
+    gap: 3vh;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.productos .producto {
+    flex: 0 0 35vh; /* Usa flex para asegurar que los elementos hijos ocupen el ancho deseado */
+    border: 2px solid var(--color_secundario);
+    border-radius: 4px;
+}
+
+.productos .producto img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.productos .producto h1 {
+    font-size: 24px;
+    color: var(--color_primario);
+    font-family: 'Quattrocento Sans';
+    text-align: center;
+}
+
+.productos .producto button{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    background-color: var(--color_secundario);
+    color: var(--color_blanco);
+    justify-content: center;
+    font-family: Playfair Display;
+    padding: 2vh;
+}
+a{
+    text-decoration: none;
+}
