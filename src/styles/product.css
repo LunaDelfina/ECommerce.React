@@ -4,5 +4,8 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
+}
 
+.product-detail img{
+    width: 50%;
 }
