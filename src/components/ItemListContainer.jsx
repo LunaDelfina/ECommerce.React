@@ -1,9 +1,9 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import ItemList from './ItemList';
 import '../styles/products.css';
 import {withLoading} from '../hoc/withLoading';
+import { getProducts, getProductsByCategory } from '../firebase/db';
 
 const ItemListWithLoading = withLoading(ItemList);
 
@@ -13,13 +13,11 @@ function ItemsListContainer(){
 
 
     useEffect(() => {
-        const allProducts='https://dummyjson.com/products';
-        const byCategory=`https://dummyjson.com/products/category/${id}`
-        fetch(id ? byCategory : allProducts)
-        .then(res => res.json())
-        .then(res=> setItems(res.products));
-        
-        
+        if(id){
+            getProductsByCategory(id).then(res => setItems(res))
+        }else{
+            getProducts().then(res => setItems(res))
+        }
     },[id])
     return(   
         <div className='products-container'>

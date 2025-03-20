@@ -1,0 +1,107 @@
+.Cart h1{
+    color: var(--color_primario);
+    font-size: 5vh;
+    font-style: oblique;
+    margin: 2vh 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    max-height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    gap: 2vh;
+    
+}.container::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Opera */
+    }
+
+.container .Item{
+    border: 2px solid var(--color_secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 2vh 0 0;
+    gap: 2vh;
+    justify-content: space-around;
+    
+}
+
+.container .Item img{
+    height: 100%;
+    max-height: 25vh;
+    object-fit: cover;
+}
+
+.container .Item h2{
+    color: var(--color_secundario);
+    font-family:Quattrocento Sans !important;
+    font-weight: lighter;
+}
+
+.container .Item .icono{
+    height: 5vh;
+    width: 5vh;
+}
+
+.container .Item button{
+    background-color: transparent;
+}
+
+.Cart a{
+    width: 100%;
+    display: flex;
+}
+
+.Cart a button{
+    width: 100%;
+    margin-top: 2vh;
+    font-weight: bold;
+    padding: 1vh 0;
+    border-radius: 8px;
+    color: white;
+    background-color: var(--color_secundario);
+    font-size: 3vh;
+}
+
+.formulario {
+    margin-top: 2vh;
+
+}
+.formulario h2{
+    color: var(--color_secundario);
+    font-size: 5vh;
+}
+
+.formulario input{
+    width: 100%;
+    border: 2px solid var(--color_secundario);
+    border-radius: 8px;
+    padding: 2vh 1vh;
+    margin-bottom: 2vh;
+}
+
+.formulario button{
+    color: white;
+    background-color: var(--color_secundario);
+    width: 100%;
+    font-size: 4vh;
+    border-radius: 8px;
+    margin-top: 2vh;
+    padding: 2vh 0;
+    font-weight: lighter;
+    font-family: 'Quattrocento Sans';
+
+}
+
+
+
+@media (min-width:1024px){
+    .container{
+        width: 60%;
+        margin: 0 auto;
+    } 
+}

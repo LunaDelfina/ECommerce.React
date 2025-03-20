@@ -1,11 +1,37 @@
 .product-detail{
     display: flex;
+    flex-direction: column;
+
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 
 .product-detail img{
     width: 50%;
 }
+
+.item-count{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15vh;
+    margin: 2vh 0;
+    border: 3px solid var(--color_secundario);
+    border-radius: 8px;
+}
+
+.item-count button{
+    background-color: var(--color_secundario);
+    color: var(--color_blanco);
+    padding: 1vh;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.item-count p{
+    margin: 0 2vh;
+}
+

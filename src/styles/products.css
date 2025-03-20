@@ -12,11 +12,16 @@
     flex: 0 0 35vh; /* Usa flex para asegurar que los elementos hijos ocupen el ancho deseado */
     border: 2px solid var(--color_secundario);
     border-radius: 4px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }
 
 .productos .producto img {
     width: 100%;
     border-radius: 4px;
+    max-height: 35vh;
+    object-fit: contain;
 }
 
 .productos .producto h1 {
