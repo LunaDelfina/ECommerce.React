@@ -16,10 +16,10 @@ function NavBar() {
                 </Link>
                 <div className="contenido">
                 <section className='Categorias'>
-                    <Link to="category/Notebook"><button>Comedor</button></Link>
-                    <Link to="category/Cellphones"><button>Habitación</button></Link>
-                    <Link to="category/furniture"><button>Jardín</button></Link>
-                    <Link to="category/home-decoration"><button>Otros</button></Link>
+                    <Link to="category/Comedor"><button>Comedor</button></Link>
+                    <Link to="category/Habitacion"><button>Habitación</button></Link>
+                    <Link to="category/Jardin"><button>Jardín</button></Link>
+                    <Link to="category/Otro"><button>Otros</button></Link>
                 </section>
                 <CartWidget />
                 </div>

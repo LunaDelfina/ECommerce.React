@@ -5,7 +5,7 @@ import NavBar from './components/navbar';
 import ItemsListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import CartContainer from './components/CartContainer';
-import Checkout from './components/checkout';
+import Checkout from './components/checkoutForm';
 import { BrowserRouter, Routes, Route } from 'react-router';
 function App() {
   return (
